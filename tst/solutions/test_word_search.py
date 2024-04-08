@@ -1,6 +1,3 @@
-import sys
-import pytest
-
 from src.solutions.word_search import Solution
 
 class TestClass:
@@ -27,4 +24,4 @@ class TestClass:
 
         answer = solution_instance.exist(board, target)
 
-        assert answer == True
+        assert answer

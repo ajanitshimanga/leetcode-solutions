@@ -23,5 +23,8 @@ jobs:
       - name: Install Project Dependencies
         run: poetry install
 
+      - name: Run Linter
+        run: poetry run ruff check src tst
+
       - name: Run tests
         run: poetry run pytest tst
